@@ -1,0 +1,13 @@
+version: '2'
+services:
+  iot-agent:
+    build: ./
+    image: iota:latest
+    hostname: iota
+    container_name: iota
+    expose:
+        - "4041"
+        - "7896"
+    ports:
+        - "4041:4041"
+        - "7896:7896"
